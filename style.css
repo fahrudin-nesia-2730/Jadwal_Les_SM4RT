@@ -1,0 +1,146 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+}
+
+#login-container {
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 2em;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#app-container {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 2em;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.hidden {
+    display: none;
+}
+
+h1, h2.table-title {
+    color: #2c3e50;
+    text-align: center;
+    margin-top: 40px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background-color: #007bff;
+    color: white;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.error-text {
+    color: #dc3545;
+    margin-top: 10px;
+}
+
+.header-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.summary-section {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.summary-section textarea {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    table-layout: fixed;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+    vertical-align: top;
+    word-wrap: break-word;
+}
+
+th {
+    background-color: #34495e;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.whatsapp-button {
+    background-color: #25d366;
+    color: white;
+    margin: 2px;
+}
+
+.whatsapp-button:hover {
+    background-color: #128c7e;
+}
+
+.delete-button {
+    background-color: #dc3545;
+    color: white;
+    margin: 2px;
+}
+
+.delete-button:hover {
+    background-color: #c82333;
+}
+
+.button-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.daily-schedule {
+    font-size: 0.9em;
+    white-space: pre-wrap;
+    line-height: 1.4;
+}
+
+.student-name-input {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 2px;
+    box-sizing: border-box;
+}
+
+.student-name-input:focus {
+    outline: none;
+    border-color: #007bff;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasi Jadwal Les</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="login-container">
+        <h2>Aplikasi Jadwal Les</h2>
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" placeholder="Password: admin">
+        </div>
+        <button id="login-button">Masuk</button>
+        <p id="login-message" class="error-text"></p>
+    </div>
+
+    <div id="app-container" class="hidden">
+        <h1>Manajemen Jadwal Les Siswa</h1>
+        <div class="header-buttons">
+            <button id="refresh-button">Perbarui Data</button>
+            <button id="summary-button">Ringkasan Data Jadwal</button>
+            <button id="logout-button">Keluar</button>
+        </div>
+        
+        <div class="summary-section">
+            <textarea id="summary-output" rows="10" readonly></textarea>
+        </div>
+
+        <h2 class="table-title">Tabel Jadwal Perminggu</h2>
+        <table id="weekly-schedule-table">
+            <thead>
+                <tr>
+                    <th>Waktu</th>
+                    <th>Senin</th>
+                    <th>Selasa</th>
+                    <th>Rabu</th>
+                    <th>Kamis</th>
+                    <th>Jum'at</th>
+                    <th>Sabtu</th>
+                </tr>
+            </thead>
+            <tbody id="weekly-schedule-body">
+                </tbody>
+        </table>
+
+        <h2 class="table-title">Tabel Jadwal Siswa</h2>
+        <table id="schedule-table">
+            <thead>
+                <tr>
+                    <th>No.</th>
+                    <th>Nama Siswa</th>
+                    <th>Jadwal Les</th>
+                    <th>Aksi</th>
+                </tr>
+            </thead>
+            <tbody id="schedule-table-body">
+                </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
